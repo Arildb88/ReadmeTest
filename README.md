@@ -10,8 +10,8 @@ The system has different roles that restrict or gives priveleges, these can be a
 
 
 ## **How to get started Windows/MacOS:** <br>
-Expectations: some  prior technical knowledge <br> 
-Requirements: and that Docker Desktop, SDK.9 and MariaDB preinstalled on their computer. <br>
+Expectations: Some prior technical knowledge <br> 
+Requirements: Preinstall Docker Desktop, SDK.9 and MariaDB on their computer. <br>
 
 Clone the repository: <br>
 1. Open your terminal or command prompt (Git Bash, Powershell, Terminal etc.) <br>
@@ -22,7 +22,7 @@ cd Your/Path/Luftambulanse (to enter the folder of the project) <br>
 4. Run docker compose file in terminal (Git Bash, Powershell, Terminal etc.): <br>
 Enter the command: <br>
 docker compose up -d (Runs the docker compose file that builds the database)<br>
-dotnet ef database update --project project (Updates the database with mighrations)<br>
+dotnet ef database update --project project (Updates the database with migrations)<br>
 5. Run application: <br>
 Enter the command:<br>
 dotnet watch run --project project (to start the application and open your web browser with the project launched) <br>
