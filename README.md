@@ -1,6 +1,10 @@
 # **Gruppe 4 - NLA Prosjekt** <br>
----
-## **About our Project:** <br>
+
+## **About the Project:** <br>
+The project is made in collaboration between student group 4, Norsk Luftambulanse and Kartverket. <br>
+This project seeks to solve the problem of unregistered aviation obstacles that pose a danger for pilots during emergency responses. <br>
+Kartverket also has the need for a solution that handles and processes these obstacle reports. <br>
+
 We have made an ASP.NET Core MVC Aplication which is going to be used by Norsk Luftambulanse and Kartverket to collect data about unregistrered obstacles in their navigation map for Helicopters.
 The application allows users to register, view and manage information about obstacles in a structured and user friendly way.
 
