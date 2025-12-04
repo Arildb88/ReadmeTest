@@ -10,7 +10,7 @@ The system has different roles that restrict or gives priveleges, these can be a
 ---
 # Table of Contents
 1. [About the Project](#about-the-project)
-2. [Getting Started (Windows/MacOS)](#how-to-get-started-windows/macos)
+2. [Getting Started (Windows/MacOS)](#how-to-get-started-windowsmacos)
 3. [How to Use the Application](#how-to-use-the-application)
     - [Pilot](#pilot)
     - [Caseworker](#caseworker)
@@ -87,7 +87,7 @@ Leaving the role field empty will create a user without a role — an Admin can 
 - Changing a user’s role applies immediately.
 - Admins may delete users, except the final remaining Admin account.
 
-**User Roles & Permissions**<br>
+### User Roles & Permissions
 |Role|Permissions|
 |-----|-----------|
 |Pilot|				Create and submit obstacle reports|
@@ -154,7 +154,7 @@ Implemented security:
 * Anti-forgery protection (CSRF).
 
 
-## Testing: OPPDATER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+## Testing
 * Unit tests for models and controllers.
 * System testing: login, report submission, role-based access.
 * Security testing: unauthorized access attempts, validation.
