@@ -35,7 +35,7 @@ Our first page is the Loginpage, you can either Login with the users made in Pro
 You can also register a new user with your own email/password. In the register page you can select the "Pilot" role to instantly become a Pilot with its authorization and views. If you want to register as a different role you can leave the field untouched or select "--choose role--" to have "no role". 
 Then a Admin user can change your role in the system to your specific role (Caseworker, CaseworkerAdm og Admin). <br>
 
-**Pilot:** <br>
+### **Pilot:** <br>
 Your homepage is the map where you can instantly start to use our application.
 The map is interactive with zoom in/out, polyline marker, marker and compass needle (find my location/tracking).<br>
 You can also switch different maps and activate darkmode.<br>
@@ -46,8 +46,9 @@ In your Reports page you can actively follow the status on your reports as its p
 In the FullMap page you can see all the reports (from all pilots) in the database pinned on the map (to easily see where there might be obstacles that’s not in the Pilots navigation map yet).<br>
 The FAQ page includes frequently asked questions and answers.<br>
 If you click on your email (top right corner) you can either log out or go to Manage profile page where you can edit your profile, change password etc.<br>
----
-**Caseworker:**<br>
+
+
+### **Caseworker:**<br>
 You login and your homepage is the ReportsInbox where you can see all the reports in the database.
 All reports have a Status so its easy to see which report you need to assign to yourself. Assign cases to yourself with the "Take this case" button and you are automatically taken to your assigned cases for further processing of the reports.
 If you click the View details button you get access to the report details, there you can either Approve or Reject the Report. If you Reject the report you need to write in the Reason field to make the Reject button clickable. <br>
