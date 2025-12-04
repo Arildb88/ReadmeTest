@@ -141,7 +141,7 @@ Docker Compose connects the containers in a shared network.
 
 ## Project Structure
 **MVC-Model** <br>
-The project's structure follows the MVC (Model-View-Controller) pattern, with templates from ASP.NET web application..<br>
+The project's structure follows the MVC (Model-View-Controller) pattern, with templates from ASP.NET web application.<br>
 The main folders are:<br>
 - Controllers: Contains the controllers that handle the requests and responses.
 - Models: Contains the models that represent the data and business logic.
