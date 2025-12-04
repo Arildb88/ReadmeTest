@@ -10,7 +10,7 @@ The system has different roles that restrict or gives priveleges, these can be a
 ---
 # Table of Contents
 1. [About the Project](#about-the-project)
-2. [Getting Started (Windows/MacOS)](#getting-started-windowsmacos)
+2. [Getting Started (Windows/MacOS)](#how-to-get-started-windows/macos)
 3. [How to Use the Application](#how-to-use-the-application)
     - [Pilot](#pilot)
     - [Caseworker](#caseworker)
