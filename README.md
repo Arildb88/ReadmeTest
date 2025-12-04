@@ -114,7 +114,28 @@ Leaving the role field empty will create a user without a role — an Admin can 
 * Both applications are running in a Docker-container.
 * Leaflet.js for map interaction.
 * Autorization and authentication is based on roles (Pilot, Caseworker, CaseworkerAdm and Admin).
-
+```
+┌────────────────────────────┐
+│ Pilot / Admin / Caseworker │
+│   (User Interface)         │
+└───────────────┬────────────┘
+                │ HTTP/HTTPS
+┌───────────────▼────────────┐
+│ ASP.NET Web Application    │
+│ • MVC / Razor Views        │
+│ • Authentication/Identity  │
+│ • EF Core        			 │
+│ • REST endpoints           │
+└───────────────┬────────────┘
+                │ TCP 3306
+┌───────────────▼────────────┐
+│ MariaDB Database           │
+│ • Identity tables          │
+│ • Obstacle reports         │
+│ • Role & user assignments  │
+└────────────────────────────┘
+```
+Docker Compose connects the containers in a shared network.
 
 ## Project Structure
 **MVC-Model** <br>
