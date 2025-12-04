@@ -33,17 +33,17 @@ Clone the repository: <br>
 1. Open your terminal or command prompt (Git Bash, Powershell, Terminal etc.) <br>
 2. Navigate to the directory where you want to clone the repository. <br>
 3. Enter the command:<br>
-git clone https://github.com/Arildb88/Luftambulanse.git <br>
-cd Luftambulanse (to enter the folder of the project) <br>
-4. Run docker compose file in terminal (Git Bash, Powershell, Terminal etc.): <br>
+```git clone https://github.com/Arildb88/Luftambulanse.git``` <br>
+```cd Luftambulanse``` (to enter the folder of the project). <br>
+4. Run docker compose file in terminal (Git Bash, Powershell, Terminal etc.) <br>
 Enter the command: <br>
-docker compose up -d (Runs the docker compose file that builds the database)<br>
-dotnet ef database update --project project (Updates the database with migrations)<br>
+```docker compose up -d``` (Runs the docker compose file that builds the database)<br>
+```dotnet ef database update --project project``` (Updates the database with migrations)<br>
 5. Run application: <br>
 Enter the command: <br>
-dotnet watch run --project project (to start the application and open your web browser with the project launched) <br>
+```dotnet watch run --project project``` (to start the application and open your web browser with the project launched) <br>
 6. To run the tests enter the command:<br> 
-dotnet test <br>
+```dotnet test``` <br>
 
 
 ## How to Use the Application
@@ -114,6 +114,8 @@ Leaving the role field empty will create a user without a role — an Admin can 
 * Both applications are running in a Docker-container.
 * Leaflet.js for map interaction.
 * Autorization and authentication is based on roles (Pilot, Caseworker, CaseworkerAdm and Admin).
+
+	<details>
 ```
 ┌────────────────────────────┐
 │ Pilot / Admin / Caseworker │
@@ -135,6 +137,7 @@ Leaving the role field empty will create a user without a role — an Admin can 
 │ • Role & user assignments  │
 └────────────────────────────┘
 ```
+</details>
 Docker Compose connects the containers in a shared network.
 
 ## Project Structure
@@ -184,7 +187,7 @@ Implemented security:
 
 **How To Run Tests** <br>
 When in current directory (your/path/luftambulanse), run the command: <br>
-dotnet test <br>
+```dotnet test``` <br>
 
 ## Team
 |Name|                     Role|
