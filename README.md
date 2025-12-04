@@ -1,14 +1,31 @@
-# **Gruppe 4 - NLA Prosjekt** <br>
+# Gruppe 4 - NLA Prosjekt
 
-## **About the Project** <br>
+## About the Project
 The project is made in collaboration between student group 4, Norsk Luftambulanse and Kartverket. <br>
 This project seeks to solve the problem of unregistered aviation obstacles that pose a danger for pilots during emergency responses. Kartverket also need a solution that handles and processes these obstacle reports. <br>
 
 The application allows users to register, view and manage information about obstacles in a structured and user friendly way. Pilots can register obstacles on a map, for caseworkers at Kartverket to process and validate these reports. 
 The system has different roles that restrict or gives priveleges, these can be altered by the admin user. <br>
 
+---
+# Table of Contents
+1. [About the Project](#about-the-project)
+2. [Getting Started (Windows/MacOS)](#getting-started-windowsmacos)
+3. [How to Use the Application](#how-to-use-the-application)
+    - [Pilot](#pilot)
+    - [Caseworker](#caseworker)
+    - [Caseworker Admin](#caseworker-admin)
+    - [Admin](#admin)
+4. [User Roles & Permissions](#user-roles--permissions)
+5. [Technology & Tools](#technology--tools)
+6. [Project Structure](#project-structure)
+7. [Security Features](#security-features)
+8. [Testing](#testing)
+9. [Team](#team)
+10. [Additional Notes](#additional-notes)
+---
 
-## **How to get started Windows/MacOS** <br>
+## How to get started Windows/MacOS
 **Expectations:** Some prior technical knowledge. <br> 
 **Requirements:** Preinstall Docker Desktop, SDK.9 and MariaDB on their computer. <br>
 
@@ -29,37 +46,46 @@ dotnet watch run --project project (to start the application and open your web b
 dotnet test <br>
 
 
-## **How to use the application**<br>
-You are now ready to use the application.<br>
-Our first page is the Loginpage, you can either Login with the users made in Program.cs, all users (pilot@test.com, caseworker@test.com, admin@test.com, caseworkeradm@test.com) have the same password Test123!. <br>
-You can also register a new user with your own email/password. In the register page you can select the "Pilot" role to instantly become a Pilot with its authorization and views. If you want to register as a different role you can leave the field untouched or select "--choose role--" to have "no role". 
-Then a Admin user can change your role in the system to your specific role (Caseworker, CaseworkerAdm og Admin). <br>
+## How to Use the Application
+When launching the application, the first page displayed is the **Login** page.
 
-### **Pilot** <br>
-Your homepage is the map where you can instantly start to use our application.
-The map is interactive with zoom in/out, polyline marker, marker and compass needle (find my location/tracking).<br>
-You can also switch different maps and activate darkmode.<br>
-Once you place a marker on the map (if you don’t place a marker the report will use your map center as long/lat) you can press the Report button to open the report page.<br>
-The report page has pre-filled most of the information needed, but you must choose what kind of obstacle you want to report. The other details are voluntary, but for best results fill out the form to your best ability.<br>
-You can either save your report as a draft (can be edited later) or submit the report into the system for further processing.
-In your Reports page you can actively follow the status on your reports as its processed by caseworkers. If your report is Rejected, you will get a message from the Caseworker as to why the report got rejected.<br>
-In the FullMap page you can see all the reports (from all pilots) in the database pinned on the map (to easily see where there might be obstacles that’s not in the Pilots navigation map yet).<br>
-The FAQ page includes frequently asked questions and answers.<br>
-If you click on your email (top right corner) you can either log out or go to Manage profile page where you can edit your profile, change password etc.<br>
+### Login Options
+You may log in using the predefined users:
 
+| Email | Role | Password |
+|-------|-------|----------|
+| pilot@test.com | Pilot | Test123! |
+| caseworker@test.com | Caseworker | Test123! |
+| caseworkeradm@test.com | CaseworkerAdm | Test123! |
+| admin@test.com | Admin | Test123! |
 
-### **Caseworker**<br>
-You login and your homepage is the ReportsInbox where you can see all the reports in the database.
-All reports have a Status so its easy to see which report you need to assign to yourself. Assign cases to yourself with the "Take this case" button and you are automatically taken to your assigned cases for further processing of the reports.
-If you click the View details button you get access to the report details, there you can either Approve or Reject the Report. If you Reject the report you need to write in the Reason field to make the Reject button clickable. <br>
+You may also register a new user.  
+Selecting **Pilot** during registration grants pilot access immediately.  
+Leaving the role field empty will create a user without a role — an Admin can later assign one.
 
-### **CaseworkerAdmin**<br>
-You login and your homepage is the Report Inbox where you can see all the reports in the database.
-In the Actions field you can Assign the case to a Caseworker user of your choice. you can Reassign the case to another Caseworker user or Unassign a Caseworker from a certain case.
-CaseworkerAdm is also able to AssignCase to themself so that they can work on cases aswell ass Caseworkers.<br>
+### Pilot
+- Your homepage is an interactive map (zoom, markers, dark mode, compass needle, location tracking).
+- Place a marker to report an obstacle. If no marker is placed, the map center coordinates will be used.
+- The report page auto-fills most required fields; obstacle type must be selected manually.
+- Reports can be saved as drafts or submitted for processing.
+- **My Reports** displays the processing status of your submitted reports.
+- **FullMap** shows all reports from all pilots.
+- Manage your profile or change your password via the top-right user menu.
 
-### **Admin**<br>
-You login and your homepage is the AdminPage where you can change UserRoles on users in your database. Once you choose a role from the dropdown menu the changes happen instantly and the user automatically has the role. Admin user can also delete users from the database (Admin cannot delete the last Admin user).
+### Caseworker
+- Homepage: **Reports Inbox** with all submitted reports.
+- Assign a report to yourself using *Take this case*.
+- Open report details to approve or reject a submission.
+- Rejecting a report requires entering a reason in the provided field.
+
+### Caseworker Admin
+- Has access to assign, reassign, or unassign reports for any Caseworker.
+- Can assign cases to themselves and process them the same way a Caseworker would.
+
+### Admin
+- Homepage: **Admin Page**, used to manage user roles.
+- Changing a user’s role applies immediately.
+- Admins may delete users, except the final remaining Admin account.
 
 **User Roles & Permissions**<br>
 |Role|Permissions|
@@ -70,7 +96,7 @@ You login and your homepage is the AdminPage where you can change UserRoles on u
 |Admin|				Full access and role/user administration|
 
 
-## **Technology & Tools**
+## Technology & Tools
 **Technologies Used:**
 * JavaScript, C#, HTML & CSS.
 * .Net 9, MVC, Razor Views.
@@ -90,7 +116,7 @@ You login and your homepage is the AdminPage where you can change UserRoles on u
 * Autorization and authentication is based on roles (Pilot, Caseworker, CaseworkerAdm and Admin).
 
 
-## **Project Structure**
+## Project Structure
 **MVC-Model** <br>
 The project's structure follows the MVC (Model-View-Controller) pattern, with templates from ASP.NET web application..<br>
 The main folders are:<br>
@@ -119,7 +145,7 @@ The main folders are:<br>
 |/Readme|                 Containing information about the project|
 
 
-## **Security Features** 
+## Security Features
 Implemented security:
 * ASP.NET Identity authentication with hashed passwords.
 * Role-based authorization (Pilot, Caseworker, CaseworkerAdm and Admin).
@@ -128,7 +154,7 @@ Implemented security:
 * Anti-forgery protection (CSRF).
 
 
-## **Testing: OPPDATER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+## Testing: OPPDATER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * Unit tests for models and controllers.
 * System testing: login, report submission, role-based access.
 * Security testing: unauthorized access attempts, validation.
@@ -139,7 +165,7 @@ Implemented security:
 When in current directory (your/path/luftambulanse), run the command: <br>
 dotnet test <br>
 
-## **Team**
+## Team
 |Name|                     Role|
 |----|-------------------------|
 |Arild Bjørnetrø|          Developer|
@@ -150,7 +176,7 @@ dotnet test <br>
 |Jonas Bendal|             Developer|
 
 
-## **Additional Notes**
+## Additional Notes
 **Migrations** <br>
 We have deletet our Migration folder due to a namechange in our DbContext file that resultet in an error with previous migrations. We tried to change the name locally in each file, but the error presisted and we decided to delete our files and start with a clean migration history.
 
