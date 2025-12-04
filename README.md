@@ -2,8 +2,10 @@
 
 ## **About the Project:** <br>
 The project is made in collaboration between student group 4, Norsk Luftambulanse and Kartverket. <br>
-This project seeks to solve the problem of unregistered aviation obstacles that pose a danger for pilots during emergency responses. <br>
-Kartverket also has the need for a solution that handles and processes these obstacle reports. <br>
+This project seeks to solve the problem of unregistered aviation obstacles that pose a danger for pilots during emergency responses. Kartverket also need a solution that handles and processes these obstacle reports. <br>
+
+This application makes it possible for pilots to register obstacles on a map, for caseworkers at Kartverket to process and validate these reports. The system has different roles that restrict or gives priveleges, these can be altered by the admin user. <br>
+
 
 We have made an ASP.NET Core MVC Aplication which is going to be used by Norsk Luftambulanse and Kartverket to collect data about unregistrered obstacles in their navigation map for Helicopters.
 The application allows users to register, view and manage information about obstacles in a structured and user friendly way.
