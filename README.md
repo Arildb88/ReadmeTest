@@ -5,7 +5,7 @@ The project is made in collaboration between student group 4, Norsk Luftambulans
 This project seeks to solve the problem of unregistered aviation obstacles that pose a danger for pilots during emergency responses. Kartverket also need a solution that handles and processes these obstacle reports. <br>
 
 The application allows users to register, view and manage information about obstacles in a structured and user friendly way. Pilots can register obstacles on a map, for caseworkers at Kartverket to process and validate these reports. 
-The system has different roles that restrict or gives priveleges, these can be altered by the admin user. <br>
+The system has different roles that restrict or gives privileges, these can be altered by the admin user. <br>
 
 ---
 # Table of Contents
@@ -103,19 +103,18 @@ Leaving the role field empty will create a user without a role — an Admin can 
 * MariaDB/MySQL.
 	* MariaDB database with ASP.NET Identity.
 * Docker & Docker Compose.
-* Leaflet.js for GIS map funtionality.
+* Leaflet.js for GIS map functionality.
 * NuGet:
     * Microsoft.EntityFrameworkCore.Design
     * Microsoft.EntityFrameworkCore.Tools
     * Pomelo.EntityFrameworkCore.MySql
 
 **The system consists of:**
-* Webapplication developted in ASP.NET Core 9 with MVC/Razor Views.
+* Webapplication  in ASP.NET Core 9 with MVC/Razor Views.
 * Both applications are running in a Docker-container.
 * Leaflet.js for map interaction.
-* Autorization and authentication is based on roles (Pilot, Caseworker, CaseworkerAdm and Admin).
+* Authorization and authentication is based on roles (Pilot, Caseworker, CaseworkerAdm and Admin).
 
-	<details>
 ```
 ┌────────────────────────────┐
 │ Pilot / Admin / Caseworker │
@@ -137,7 +136,7 @@ Leaving the role field empty will create a user without a role — an Admin can 
 │ • Role & user assignments  │
 └────────────────────────────┘
 ```
-</details>
+
 Docker Compose connects the containers in a shared network.
 
 ## Project Structure
@@ -147,7 +146,7 @@ The main folders are:<br>
 - Controllers: Contains the controllers that handle the requests and responses.
 - Models: Contains the models that represent the data and business logic.
 - Views: Contains the Razor views that render the HTML for the user interface.
-- Areas: Contains files from the ASP.CORE Identity liberary. Handles user, role, loggin & password with predefined views and templets (CSHTML).
+- Areas: Contains files from the ASP.CORE Identity . Handles user, role, login & password with predefined views and templets (CSHTML).
 - wwwroot: Contains static files like CSS, JavaScript, and images.
 - Data: Contains the database context and migration files.
 - Migrations: Contains Entity Framework Core migration files for database schema changes.
@@ -202,6 +201,6 @@ When in current directory (your/path/luftambulanse), run the command: <br>
 
 ## Additional Notes
 **Migrations** <br>
-We have deletet our Migration folder due to a namechange in our DbContext file that resultet in an error with previous migrations. We tried to change the name locally in each file, but the error presisted and we decided to delete our files and start with a clean migration history.
+We have deleted our Migration folder due to a namechange in our DbContext file that resultet in an error with previous migrations. We tried to change the name locally in each file, but the error persisted and we decided to delete our files and start with a clean migration history.
 
 
