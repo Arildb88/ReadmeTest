@@ -41,11 +41,12 @@ The map is interactive with zoom in/out, polyline marker, marker and compass nee
 You can also switch different maps and activate darkmode.<br>
 Once you place a marker on the map (if you don’t place a marker the report will use your map center as long/lat) you can press the Report button to open the report page.<br>
 The report page has pre-filled most of the information needed, but you must choose what kind of obstacle you want to report. The other details are voluntary, but for best results fill out the form to your best ability.<br>
-You can either save your report as a draft (can be edited later) or submit the report into the system for further processing.<br>
+You can either save your report as a draft (can be edited later) or submit the report into the system for further processing.
 In your Reports page you can actively follow the status on your reports as its processed by caseworkers. If your report is Rejected, you will get a message from the Caseworker as to why the report got rejected.<br>
 In the FullMap page you can see all the reports (from all pilots) in the database pinned on the map (to easily see where there might be obstacles that’s not in the Pilots navigation map yet).<br>
 The FAQ page includes frequently asked questions and answers.<br>
 If you click on your email (top right corner) you can either log out or go to Manage profile page where you can edit your profile, change password etc.<br>
+---
 **Caseworker:**<br>
 You login and your homepage is the ReportsInbox where you can see all the reports in the database.
 All reports have a Status so its easy to see which report you need to assign to yourself. Assign cases to yourself with the "Take this case" button and you are automatically taken to your assigned cases for further processing of the reports.
