@@ -4,11 +4,26 @@
 The project is made in collaboration between student group 4, Norsk Luftambulanse and Kartverket. <br>
 This project seeks to solve the problem of unregistered aviation obstacles that pose a danger for pilots during emergency responses. Kartverket also need a solution that handles and processes these obstacle reports. <br>
 
-The application allows users to register, view and manage information about obstacles in a structured and user friendly way. Pilots can register obstacles on a map, for caseworkers at Kartverket to process and validate these reports. The system has different roles that restrict or gives priveleges, these can be altered by the admin user. <br>
+The application allows users to register, view and manage information about obstacles in a structured and user friendly way. Pilots can register obstacles on a map, for caseworkers at Kartverket to process and validate these reports. 
+The system has different roles that restrict or gives priveleges, these can be altered by the admin user. <br>
+
+## **How to get started Windows/MacOS:** <br>
+Clone the repository:<br>
+1. Open your terminal or command prompt (Git Bash, Powershell, Terminal etc.)
+2. Navigate to the directory where you want to clone the repository.
+3. Enter the command:<br>
+git clone https://github.com/Arildb88/Luftambulanse.git <br>
+cd Luftambulanse (to enter the folder of the project) <br>
+4. Run docker compose file in terminal (Git Bash, Powershell, Terminal etc.):
+Enter the command: <br>
+docker compose up -d (Runs the docker compose file that builds the database)<br>
+dotnet ef database update --project project (Updates the database to the project)<br>
+5. Run application: <br>
+Enter the command:<br>
+dotnet watch run --project project (to start the application and open your web browser with the project launched)
+6. To run the tests enter the command: <br> dotnet test
 
 
-We have made an ASP.NET Core MVC Aplication which is going to be used by Norsk Luftambulanse and Kartverket to collect data about unregistrered obstacles in their navigation map for Helicopters.
-The application allows users to register, view and manage information about obstacles in a structured and user friendly way.
 
 **The system consists of:**
 * Webapplication developted in ASP.NET Core 9 with MVC/Razor Views.
@@ -88,20 +103,7 @@ On main project and test project, updates that
 **Migrations:** <br>
 We have deletet our Migration folder due to a namechange in our DbContext file that resultet in an error with previous migrations. We tried to change the name locally in each file, but the error presisted and we decided to delete our files and start with a clean migration history.
 
-**How to get started Windows/MacOS:** <br>
-Clone the repository:<br>
-1. Open your terminal or command prompt (Git Bash, Powershell, Terminal etc.)
-2. Navigate to the directory where you want to clone the repository.
-3. Enter the command:<br>
-git clone https://github.com/Arildb88/Luftambulanse.git <br>
-cd Luftambulanse (to enter the folder of the project) <br>
-4. Run docker compose file in terminal (Git Bash, Powershell, Terminal etc.):
-Enter the command: <br>
-docker compose up -d (Runs the docker compose file that builds the database)<br>
-dotnet ef database update --project project (Updates the database to the project)<br>
-5. Run application: <br>
-Enter the command:<br>
-dotnet watch run --project project (to start the application and open your web browser with the project launched)
+
 
 **How to use the application:**<br>
 You are now ready to use the application.<br>
